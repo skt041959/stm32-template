@@ -1,4 +1,5 @@
 include Makefile.common
+
 LDFLAGS=$(COMMONFLAGS) -fno-exceptions -ffunction-sections -fdata-sections -L$(LIBDIR) -nostartfiles -Wl,--gc-sections,-Tlinker.ld
 
 LDLIBS+=-lm
@@ -34,13 +35,15 @@ clean:
 #	rm -f $(PROGRAM).info_code
 
 flash:
-	do_flash main.bin
+	do_flash $(PWD)/main.bin
+	arm-none-eabi-gdb --eval-command="target remote localhost:3333" main.elf
 
 flash_s:
 	st-flash write v1 main.bin 0x8000000
 
 debug:
-	arm-none-eabi-gdb --eval-command="target extended-remote localhost:3333" main.elf
+	arm-none-eabi-gdb --eval-command="target remote localhost:3333" main.elf
+	#arm-none-eabi-gdb --eval-command="target extended-remote localhost:3333" main.elf
 
 emu:
 	#arm-none-eabi-gdb --eval-command="target extended-remote localhost:1234" --eval-command="set $sp=0x20005000" main.elf
