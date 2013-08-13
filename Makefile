@@ -1,12 +1,12 @@
 include Makefile.common
 
-LDFLAGS=$(COMMONFLAGS) -fno-exceptions -ffunction-sections -fdata-sections -L$(LIBDIR) -nostartfiles -Wl,--gc-sections,-Tlinker.ld
+LDFLAGS=$(COMMONFLAGS) -fno-exceptions -ffunction-sections -fdata-sections -L$(LIBDIR) -nostartfiles -Wl,--gc-sections,-Tstm32.ld
 
 LDLIBS+=-lm
 LDLIBS+=-lstm32
 all: libs src
 	$(CC) -o $(PROGRAM).elf $(LDFLAGS) \
-		-Wl,--whole-archive \
+		-Wl,--whole-archive,-Map,$(PROGRAM).map \
 		src/app.a \
 		-Wl,--no-whole-archive \
 		$(LDLIBS)
@@ -36,7 +36,7 @@ clean:
 
 flash:
 	do_flash $(PWD)/main.bin
-	arm-none-eabi-gdb --eval-command="target remote localhost:3333" main.elf
+	#arm-none-eabi-gdb --eval-command="target remote localhost:3333" main.elf
 
 flash_s:
 	st-flash write v1 main.bin 0x8000000

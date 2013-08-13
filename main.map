@@ -1,0 +1,644 @@
+Archive member included because of file (symbol)
+
+src/app.a(startup_stm32f10x_hd.o)
+                              (--whole-archive)
+src/app.a(main.o)             (--whole-archive)
+src/app.a(newlib_stubs.o)     (--whole-archive)
+src/app.a(stm32f10x_delay.o)  (--whole-archive)
+src/app.a(system_stm32f10x.o)
+                              (--whole-archive)
+/home/skt/code/elecgame/template/libs/libstm32.a(core_cm3.o)
+                              src/app.a(newlib_stubs.o) (__get_MSP)
+/home/skt/code/elecgame/template/libs/libstm32.a(stm32f10x_gpio.o)
+                              src/app.a(main.o) (GPIO_Init)
+/home/skt/code/elecgame/template/libs/libstm32.a(stm32f10x_rcc.o)
+                              src/app.a(main.o) (RCC_APB2PeriphClockCmd)
+/home/skt/code/CodeSourcery/Sourcery_CodeBench_Lite_for_ARM_EABI/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2/libgcc.a(_arm_muldivsf3.o)
+                              src/app.a(main.o) (__aeabi_fmul)
+/home/skt/code/CodeSourcery/Sourcery_CodeBench_Lite_for_ARM_EABI/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/thumb2/libc.a(lib_a-reent.o)
+                              src/app.a(newlib_stubs.o) (errno)
+/home/skt/code/CodeSourcery/Sourcery_CodeBench_Lite_for_ARM_EABI/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/thumb2/libc.a(lib_a-freer.o)
+                              /home/skt/code/CodeSourcery/Sourcery_CodeBench_Lite_for_ARM_EABI/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/thumb2/libc.a(lib_a-reent.o) (_free_r)
+/home/skt/code/CodeSourcery/Sourcery_CodeBench_Lite_for_ARM_EABI/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/thumb2/libc.a(lib_a-impure.o)
+                              /home/skt/code/CodeSourcery/Sourcery_CodeBench_Lite_for_ARM_EABI/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/thumb2/libc.a(lib_a-reent.o) (_impure_ptr)
+/home/skt/code/CodeSourcery/Sourcery_CodeBench_Lite_for_ARM_EABI/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/thumb2/libc.a(lib_a-mallocr.o)
+                              /home/skt/code/CodeSourcery/Sourcery_CodeBench_Lite_for_ARM_EABI/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/thumb2/libc.a(lib_a-freer.o) (__malloc_current_mallinfo)
+/home/skt/code/CodeSourcery/Sourcery_CodeBench_Lite_for_ARM_EABI/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/thumb2/libc.a(lib_a-mlock.o)
+                              /home/skt/code/CodeSourcery/Sourcery_CodeBench_Lite_for_ARM_EABI/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/thumb2/libc.a(lib_a-freer.o) (__malloc_lock)
+/home/skt/code/CodeSourcery/Sourcery_CodeBench_Lite_for_ARM_EABI/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/thumb2/libc.a(lib_a-sbrkr.o)
+                              /home/skt/code/CodeSourcery/Sourcery_CodeBench_Lite_for_ARM_EABI/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/thumb2/libc.a(lib_a-freer.o) (_sbrk_r)
+
+Allocating common symbols
+Common symbol       size              file
+
+errno               0x4               /home/skt/code/CodeSourcery/Sourcery_CodeBench_Lite_for_ARM_EABI/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/thumb2/libc.a(lib_a-reent.o)
+TimeDelay           0x4               src/app.a(stm32f10x_delay.o)
+
+Discarded input sections
+
+ .text          0x00000000       0x14 src/app.a(startup_stm32f10x_hd.o)
+ .data          0x00000000        0x0 src/app.a(startup_stm32f10x_hd.o)
+ .bss           0x00000000        0x0 src/app.a(startup_stm32f10x_hd.o)
+ .data          0x00000000        0x0 src/app.a(main.o)
+ .bss           0x00000000        0x0 src/app.a(main.o)
+ .text          0x00000000      0x37c src/app.a(newlib_stubs.o)
+ .data          0x00000000        0x4 src/app.a(newlib_stubs.o)
+ .bss           0x00000000        0x8 src/app.a(newlib_stubs.o)
+ .rodata        0x00000000       0x24 src/app.a(newlib_stubs.o)
+ .debug_info    0x00000000      0x7f2 src/app.a(newlib_stubs.o)
+ .debug_abbrev  0x00000000      0x1c6 src/app.a(newlib_stubs.o)
+ .debug_loc     0x00000000      0x3a0 src/app.a(newlib_stubs.o)
+ .debug_aranges
+                0x00000000       0x20 src/app.a(newlib_stubs.o)
+ .debug_line    0x00000000      0x26a src/app.a(newlib_stubs.o)
+ .debug_str     0x00000000      0x345 src/app.a(newlib_stubs.o)
+ .comment       0x00000000       0x31 src/app.a(newlib_stubs.o)
+ .ARM.attributes
+                0x00000000       0x33 src/app.a(newlib_stubs.o)
+ .debug_frame   0x00000000      0x1ec src/app.a(newlib_stubs.o)
+ .text          0x00000000      0x100 src/app.a(stm32f10x_delay.o)
+ .data          0x00000000        0x0 src/app.a(stm32f10x_delay.o)
+ .bss           0x00000000        0x0 src/app.a(stm32f10x_delay.o)
+ .debug_info    0x00000000      0x64b src/app.a(stm32f10x_delay.o)
+ .debug_abbrev  0x00000000      0x1aa src/app.a(stm32f10x_delay.o)
+ .debug_loc     0x00000000       0xd4 src/app.a(stm32f10x_delay.o)
+ .debug_aranges
+                0x00000000       0x20 src/app.a(stm32f10x_delay.o)
+ .debug_line    0x00000000      0x15a src/app.a(stm32f10x_delay.o)
+ .debug_str     0x00000000      0x5de src/app.a(stm32f10x_delay.o)
+ .comment       0x00000000       0x31 src/app.a(stm32f10x_delay.o)
+ .ARM.attributes
+                0x00000000       0x33 src/app.a(stm32f10x_delay.o)
+ .debug_frame   0x00000000       0x84 src/app.a(stm32f10x_delay.o)
+ COMMON         0x00000000        0x4 src/app.a(stm32f10x_delay.o)
+ .bss           0x00000000        0x0 src/app.a(system_stm32f10x.o)
+ .text          0x00000000      0x28c /home/skt/code/elecgame/template/libs/libstm32.a(core_cm3.o)
+ .data          0x00000000        0x0 /home/skt/code/elecgame/template/libs/libstm32.a(core_cm3.o)
+ .bss           0x00000000        0x0 /home/skt/code/elecgame/template/libs/libstm32.a(core_cm3.o)
+ .debug_info    0x00000000      0x55e /home/skt/code/elecgame/template/libs/libstm32.a(core_cm3.o)
+ .debug_abbrev  0x00000000       0xe4 /home/skt/code/elecgame/template/libs/libstm32.a(core_cm3.o)
+ .debug_loc     0x00000000      0x3f0 /home/skt/code/elecgame/template/libs/libstm32.a(core_cm3.o)
+ .debug_aranges
+                0x00000000       0x20 /home/skt/code/elecgame/template/libs/libstm32.a(core_cm3.o)
+ .debug_line    0x00000000      0x158 /home/skt/code/elecgame/template/libs/libstm32.a(core_cm3.o)
+ .debug_str     0x00000000      0x230 /home/skt/code/elecgame/template/libs/libstm32.a(core_cm3.o)
+ .comment       0x00000000       0x31 /home/skt/code/elecgame/template/libs/libstm32.a(core_cm3.o)
+ .ARM.attributes
+                0x00000000       0x33 /home/skt/code/elecgame/template/libs/libstm32.a(core_cm3.o)
+ .debug_frame   0x00000000      0x280 /home/skt/code/elecgame/template/libs/libstm32.a(core_cm3.o)
+ .data          0x00000000        0x0 /home/skt/code/elecgame/template/libs/libstm32.a(stm32f10x_gpio.o)
+ .bss           0x00000000        0x0 /home/skt/code/elecgame/template/libs/libstm32.a(stm32f10x_gpio.o)
+ .bss           0x00000000        0x0 /home/skt/code/elecgame/template/libs/libstm32.a(stm32f10x_rcc.o)
+ .data          0x00000000        0x0 /home/skt/code/CodeSourcery/Sourcery_CodeBench_Lite_for_ARM_EABI/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2/libgcc.a(_arm_muldivsf3.o)
+ .bss           0x00000000        0x0 /home/skt/code/CodeSourcery/Sourcery_CodeBench_Lite_for_ARM_EABI/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2/libgcc.a(_arm_muldivsf3.o)
+ .text          0x00000000      0x114 /home/skt/code/CodeSourcery/Sourcery_CodeBench_Lite_for_ARM_EABI/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/thumb2/libc.a(lib_a-reent.o)
+ .data          0x00000000        0x0 /home/skt/code/CodeSourcery/Sourcery_CodeBench_Lite_for_ARM_EABI/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/thumb2/libc.a(lib_a-reent.o)
+ .bss           0x00000000        0x0 /home/skt/code/CodeSourcery/Sourcery_CodeBench_Lite_for_ARM_EABI/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/thumb2/libc.a(lib_a-reent.o)
+ .ARM.attributes
+                0x00000000       0x29 /home/skt/code/CodeSourcery/Sourcery_CodeBench_Lite_for_ARM_EABI/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/thumb2/libc.a(lib_a-reent.o)
+ .debug_frame   0x00000000       0x64 /home/skt/code/CodeSourcery/Sourcery_CodeBench_Lite_for_ARM_EABI/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/thumb2/libc.a(lib_a-reent.o)
+ COMMON         0x00000000        0x4 /home/skt/code/CodeSourcery/Sourcery_CodeBench_Lite_for_ARM_EABI/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/thumb2/libc.a(lib_a-reent.o)
+ .text          0x00000000      0x238 /home/skt/code/CodeSourcery/Sourcery_CodeBench_Lite_for_ARM_EABI/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/thumb2/libc.a(lib_a-freer.o)
+ .data          0x00000000        0x0 /home/skt/code/CodeSourcery/Sourcery_CodeBench_Lite_for_ARM_EABI/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/thumb2/libc.a(lib_a-freer.o)
+ .bss           0x00000000        0x0 /home/skt/code/CodeSourcery/Sourcery_CodeBench_Lite_for_ARM_EABI/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/thumb2/libc.a(lib_a-freer.o)
+ .ARM.attributes
+                0x00000000       0x29 /home/skt/code/CodeSourcery/Sourcery_CodeBench_Lite_for_ARM_EABI/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/thumb2/libc.a(lib_a-freer.o)
+ .debug_frame   0x00000000       0x50 /home/skt/code/CodeSourcery/Sourcery_CodeBench_Lite_for_ARM_EABI/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/thumb2/libc.a(lib_a-freer.o)
+ .text          0x00000000        0x0 /home/skt/code/CodeSourcery/Sourcery_CodeBench_Lite_for_ARM_EABI/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/thumb2/libc.a(lib_a-impure.o)
+ .data          0x00000000       0xf4 /home/skt/code/CodeSourcery/Sourcery_CodeBench_Lite_for_ARM_EABI/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/thumb2/libc.a(lib_a-impure.o)
+ .bss           0x00000000        0x0 /home/skt/code/CodeSourcery/Sourcery_CodeBench_Lite_for_ARM_EABI/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/thumb2/libc.a(lib_a-impure.o)
+ .rodata        0x00000000        0x4 /home/skt/code/CodeSourcery/Sourcery_CodeBench_Lite_for_ARM_EABI/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/thumb2/libc.a(lib_a-impure.o)
+ .rodata.str1.4
+                0x00000000        0x4 /home/skt/code/CodeSourcery/Sourcery_CodeBench_Lite_for_ARM_EABI/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/thumb2/libc.a(lib_a-impure.o)
+ .ARM.attributes
+                0x00000000       0x29 /home/skt/code/CodeSourcery/Sourcery_CodeBench_Lite_for_ARM_EABI/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/thumb2/libc.a(lib_a-impure.o)
+ .text          0x00000000      0x598 /home/skt/code/CodeSourcery/Sourcery_CodeBench_Lite_for_ARM_EABI/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/thumb2/libc.a(lib_a-mallocr.o)
+ .data          0x00000000      0x410 /home/skt/code/CodeSourcery/Sourcery_CodeBench_Lite_for_ARM_EABI/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/thumb2/libc.a(lib_a-mallocr.o)
+ .bss           0x00000000       0x34 /home/skt/code/CodeSourcery/Sourcery_CodeBench_Lite_for_ARM_EABI/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/thumb2/libc.a(lib_a-mallocr.o)
+ .ARM.attributes
+                0x00000000       0x29 /home/skt/code/CodeSourcery/Sourcery_CodeBench_Lite_for_ARM_EABI/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/thumb2/libc.a(lib_a-mallocr.o)
+ .debug_frame   0x00000000       0x38 /home/skt/code/CodeSourcery/Sourcery_CodeBench_Lite_for_ARM_EABI/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/thumb2/libc.a(lib_a-mallocr.o)
+ .text          0x00000000        0x8 /home/skt/code/CodeSourcery/Sourcery_CodeBench_Lite_for_ARM_EABI/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/thumb2/libc.a(lib_a-mlock.o)
+ .data          0x00000000        0x0 /home/skt/code/CodeSourcery/Sourcery_CodeBench_Lite_for_ARM_EABI/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/thumb2/libc.a(lib_a-mlock.o)
+ .bss           0x00000000        0x0 /home/skt/code/CodeSourcery/Sourcery_CodeBench_Lite_for_ARM_EABI/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/thumb2/libc.a(lib_a-mlock.o)
+ .ARM.attributes
+                0x00000000       0x29 /home/skt/code/CodeSourcery/Sourcery_CodeBench_Lite_for_ARM_EABI/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/thumb2/libc.a(lib_a-mlock.o)
+ .debug_frame   0x00000000       0x30 /home/skt/code/CodeSourcery/Sourcery_CodeBench_Lite_for_ARM_EABI/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/thumb2/libc.a(lib_a-mlock.o)
+ .text          0x00000000       0x28 /home/skt/code/CodeSourcery/Sourcery_CodeBench_Lite_for_ARM_EABI/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/thumb2/libc.a(lib_a-sbrkr.o)
+ .data          0x00000000        0x0 /home/skt/code/CodeSourcery/Sourcery_CodeBench_Lite_for_ARM_EABI/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/thumb2/libc.a(lib_a-sbrkr.o)
+ .bss           0x00000000        0x0 /home/skt/code/CodeSourcery/Sourcery_CodeBench_Lite_for_ARM_EABI/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/thumb2/libc.a(lib_a-sbrkr.o)
+ .ARM.attributes
+                0x00000000       0x29 /home/skt/code/CodeSourcery/Sourcery_CodeBench_Lite_for_ARM_EABI/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/thumb2/libc.a(lib_a-sbrkr.o)
+ .debug_frame   0x00000000       0x2c /home/skt/code/CodeSourcery/Sourcery_CodeBench_Lite_for_ARM_EABI/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/thumb2/libc.a(lib_a-sbrkr.o)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+RAM              0x20000000         0x0000c000         xrw
+FLASH            0x08000000         0x00080000         xr
+FLASHB1          0x00000000         0x00000000         xr
+EXTMEMB0         0x00000000         0x00000000         xr
+EXTMEMB1         0x00000000         0x00000000         xr
+EXTMEMB2         0x00000000         0x00000000         xr
+EXTMEMB3         0x00000000         0x00000000         xr
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+                0x00000400                __Stack_Size = 0x400
+                0x00000400                PROVIDE (_Stack_Size, __Stack_Size)
+                0x2000bc00                __Stack_Init = (_estack - __Stack_Size)
+                0x2000bc00                PROVIDE (_Stack_Init, __Stack_Init)
+                0x00000100                _Minimum_Stack_Size = 0x100
+                0x00000000                PROVIDE (Undefined_Handler, 0x0)
+                0x00000000                PROVIDE (SWI_Handler, 0x0)
+                0x00000000                PROVIDE (IRQ_Handler, 0x0)
+                0x00000000                PROVIDE (Prefetch_Handler, 0x0)
+                0x00000000                PROVIDE (Abort_Handler, 0x0)
+                0x00000000                PROVIDE (FIQ_Handler, 0x0)
+                0x00000000                PROVIDE (NMIException, 0x0)
+                0x00000000                PROVIDE (HardFaultException, 0x0)
+                0x00000000                PROVIDE (MemManageException, 0x0)
+                0x00000000                PROVIDE (BusFaultException, 0x0)
+                0x00000000                PROVIDE (UsageFaultException, 0x0)
+                0x00000000                PROVIDE (SVCHandler, 0x0)
+                0x00000000                PROVIDE (DebugMonitor, 0x0)
+                0x00000000                PROVIDE (PendSVC, 0x0)
+                0x00000000                PROVIDE (SysTickHandler, 0x0)
+                0x00000000                PROVIDE (WWDG_IRQHandler, 0x0)
+                0x00000000                PROVIDE (PVD_IRQHandler, 0x0)
+                0x00000000                PROVIDE (TAMPER_IRQHandler, 0x0)
+                0x00000000                PROVIDE (RTC_IRQHandler, 0x0)
+                0x00000000                PROVIDE (FLASH_IRQHandler, 0x0)
+                0x00000000                PROVIDE (RCC_IRQHandler, 0x0)
+                0x00000000                PROVIDE (EXTI0_IRQHandler, 0x0)
+                0x00000000                PROVIDE (EXTI1_IRQHandler, 0x0)
+                0x00000000                PROVIDE (EXTI2_IRQHandler, 0x0)
+                0x00000000                PROVIDE (EXTI3_IRQHandler, 0x0)
+                0x00000000                PROVIDE (EXTI4_IRQHandler, 0x0)
+                0x00000000                PROVIDE (DMAChannel1_IRQHandler, 0x0)
+                0x00000000                PROVIDE (DMAChannel2_IRQHandler, 0x0)
+                0x00000000                PROVIDE (DMAChannel3_IRQHandler, 0x0)
+                0x00000000                PROVIDE (DMAChannel4_IRQHandler, 0x0)
+                0x00000000                PROVIDE (DMAChannel5_IRQHandler, 0x0)
+                0x00000000                PROVIDE (DMAChannel6_IRQHandler, 0x0)
+                0x00000000                PROVIDE (DMAChannel7_IRQHandler, 0x0)
+                0x00000000                PROVIDE (ADC_IRQHandler, 0x0)
+                0x00000000                PROVIDE (USB_HP_CAN_TX_IRQHandler, 0x0)
+                0x00000000                PROVIDE (USB_LP_CAN_RX0_IRQHandler, 0x0)
+                0x00000000                PROVIDE (CAN_RX1_IRQHandler, 0x0)
+                0x00000000                PROVIDE (CAN_SCE_IRQHandler, 0x0)
+                0x00000000                PROVIDE (EXTI9_5_IRQHandler, 0x0)
+                0x00000000                PROVIDE (TIM1_BRK_IRQHandler, 0x0)
+                0x00000000                PROVIDE (TIM1_UP_IRQHandler, 0x0)
+                0x00000000                PROVIDE (TIM1_TRG_COM_IRQHandler, 0x0)
+                0x00000000                PROVIDE (TIM1_CC_IRQHandler, 0x0)
+                0x00000000                PROVIDE (TIM2_IRQHandler, 0x0)
+                0x00000000                PROVIDE (TIM3_IRQHandler, 0x0)
+                0x00000000                PROVIDE (TIM4_IRQHandler, 0x0)
+                0x00000000                PROVIDE (I2C1_EV_IRQHandler, 0x0)
+                0x00000000                PROVIDE (I2C1_ER_IRQHandler, 0x0)
+                0x00000000                PROVIDE (I2C2_EV_IRQHandler, 0x0)
+                0x00000000                PROVIDE (I2C2_ER_IRQHandler, 0x0)
+                0x00000000                PROVIDE (SPI1_IRQHandler, 0x0)
+                0x00000000                PROVIDE (SPI2_IRQHandler, 0x0)
+                0x00000000                PROVIDE (USART1_IRQHandler, 0x0)
+                0x00000000                PROVIDE (USART2_IRQHandler, 0x0)
+                0x00000000                PROVIDE (USART3_IRQHandler, 0x0)
+                0x00000000                PROVIDE (EXTI15_10_IRQHandler, 0x0)
+                0x00000000                PROVIDE (RTCAlarm_IRQHandler, 0x0)
+                0x00000000                PROVIDE (USBWakeUp_IRQHandler, 0x0)
+                0x42000000                PERIPH_BB_BASE = 0x42000000
+                0x22000000                SRAM_BB_BASE = 0x22000000
+                0x20000000                SRAM_BASE = 0x20000000
+                0x40000000                PERIPH_BASE = 0x40000000
+                0x40022000                PROVIDE (FLASH_BASE, 0x40022000)
+                0x1ffff800                PROVIDE (OB_BASE, 0x1ffff800)
+                0x40000000                APB1PERIPH_BASE = PERIPH_BASE
+                0x40010000                APB2PERIPH_BASE = (PERIPH_BASE + 0x10000)
+                0x40020000                AHBPERIPH_BASE = (PERIPH_BASE + 0x20000)
+                0x40000000                PROVIDE (TIM2, (APB1PERIPH_BASE + 0x0))
+                0x40000400                PROVIDE (TIM3, (APB1PERIPH_BASE + 0x400))
+                0x40000800                PROVIDE (TIM4, (APB1PERIPH_BASE + 0x800))
+                0x40002800                PROVIDE (RTC, (APB1PERIPH_BASE + 0x2800))
+                0x40002c00                PROVIDE (WWDG, (APB1PERIPH_BASE + 0x2c00))
+                0x40003000                PROVIDE (IWDG, (APB1PERIPH_BASE + 0x3000))
+                0x40003800                PROVIDE (SPI2, (APB1PERIPH_BASE + 0x3800))
+                0x40004400                PROVIDE (USART2, (APB1PERIPH_BASE + 0x4400))
+                0x40004800                PROVIDE (USART3, (APB1PERIPH_BASE + 0x4800))
+                0x40005400                PROVIDE (I2C1, (APB1PERIPH_BASE + 0x5400))
+                0x40005800                PROVIDE (I2C2, (APB1PERIPH_BASE + 0x5800))
+                0x40006400                PROVIDE (CAN, (APB1PERIPH_BASE + 0x6400))
+                0x40006c00                PROVIDE (BKP, (APB1PERIPH_BASE + 0x6c00))
+                0x40007000                PROVIDE (PWR, (APB1PERIPH_BASE + 0x7000))
+                0x40010000                PROVIDE (AFIO, (APB2PERIPH_BASE + 0x0))
+                0x40010400                PROVIDE (EXTI, (APB2PERIPH_BASE + 0x400))
+                0x40010800                PROVIDE (GPIOA, (APB2PERIPH_BASE + 0x800))
+                0x40010c00                PROVIDE (GPIOB, (APB2PERIPH_BASE + 0xc00))
+                0x40011000                PROVIDE (GPIOC, (APB2PERIPH_BASE + 0x1000))
+                0x40011400                PROVIDE (GPIOD, (APB2PERIPH_BASE + 0x1400))
+                0x40011800                PROVIDE (GPIOE, (APB2PERIPH_BASE + 0x1800))
+                0x40012400                PROVIDE (ADC1, (APB2PERIPH_BASE + 0x2400))
+                0x40012800                PROVIDE (ADC2, (APB2PERIPH_BASE + 0x2800))
+                0x40012c00                PROVIDE (TIM1, (APB2PERIPH_BASE + 0x2c00))
+                0x40013000                PROVIDE (SPI1, (APB2PERIPH_BASE + 0x3000))
+                0x40013800                PROVIDE (USART1, (APB2PERIPH_BASE + 0x3800))
+                0x40020000                PROVIDE (DMA, (AHBPERIPH_BASE + 0x0))
+                0x40020008                PROVIDE (DMA_Channel1, (AHBPERIPH_BASE + 0x8))
+                0x4002001c                PROVIDE (DMA_Channel2, (AHBPERIPH_BASE + 0x1c))
+                0x40020030                PROVIDE (DMA_Channel3, (AHBPERIPH_BASE + 0x30))
+                0x40020044                PROVIDE (DMA_Channel4, (AHBPERIPH_BASE + 0x44))
+                0x40020058                PROVIDE (DMA_Channel5, (AHBPERIPH_BASE + 0x58))
+                0x4002006c                PROVIDE (DMA_Channel6, (AHBPERIPH_BASE + 0x6c))
+                0x40020080                PROVIDE (DMA_Channel7, (AHBPERIPH_BASE + 0x80))
+                0x40021000                PROVIDE (RCC, (AHBPERIPH_BASE + 0x1000))
+                0xe000e000                SCS_BASE = 0xe000e000
+                0xe000e010                PROVIDE (SysTick, (SCS_BASE + 0x10))
+                0xe000e100                PROVIDE (NVIC, (SCS_BASE + 0x100))
+                0xe000ed00                PROVIDE (SCB, (SCS_BASE + 0xd00))
+                0x2000c000                _estack = 0x2000c000
+
+.isr_vector     0x08000000      0x1e4
+                0x08000000                . = ALIGN (0x4)
+ *(.isr_vector)
+ .isr_vector    0x08000000      0x1e4 src/app.a(startup_stm32f10x_hd.o)
+                0x08000000                g_pfnVectors
+                0x080001e4                . = ALIGN (0x4)
+
+.flashtext      0x080001e4        0x0
+                0x080001e4                . = ALIGN (0x4)
+ *(.flashtext)
+                0x080001e4                . = ALIGN (0x4)
+
+.text           0x080001e4     0x14f4
+                0x080001e4                . = ALIGN (0x4)
+ *(.text)
+ .text          0x080001e4       0xc0 src/app.a(main.o)
+                0x080001e4                main
+ .text          0x080002a4      0x260 src/app.a(system_stm32f10x.o)
+                0x080002a4                SystemInit
+                0x0800030c                SystemCoreClockUpdate
+ .text          0x08000504      0x6ac /home/skt/code/elecgame/template/libs/libstm32.a(stm32f10x_gpio.o)
+                0x08000504                GPIO_DeInit
+                0x0800061c                GPIO_AFIODeInit
+                0x0800063c                GPIO_Init
+                0x080007ec                GPIO_StructInit
+                0x08000818                GPIO_ReadInputDataBit
+                0x08000854                GPIO_ReadInputData
+                0x08000870                GPIO_ReadOutputDataBit
+                0x080008ac                GPIO_ReadOutputData
+                0x080008c8                GPIO_SetBits
+                0x080008e4                GPIO_ResetBits
+                0x08000900                GPIO_WriteBit
+                0x08000930                GPIO_Write
+                0x0800094c                GPIO_PinLockConfig
+                0x08000990                GPIO_EventOutputConfig
+                0x080009dc                GPIO_EventOutputCmd
+                0x080009fc                GPIO_PinRemapConfig
+                0x08000afc                GPIO_EXTILineConfig
+                0x08000b94                GPIO_ETH_MediaInterfaceConfig
+ .text          0x08000bb0      0x840 /home/skt/code/elecgame/template/libs/libstm32.a(stm32f10x_rcc.o)
+                0x08000bb0                RCC_DeInit
+                0x08000c0c                RCC_HSEConfig
+                0x08000c68                RCC_WaitForHSEStartUp
+                0x08000ccc                RCC_AdjustHSICalibrationValue
+                0x08000d0c                RCC_HSICmd
+                0x08000d2c                RCC_PLLConfig
+                0x08000d6c                RCC_PLLCmd
+                0x08000d8c                RCC_SYSCLKConfig
+                0x08000dc4                RCC_GetSYSCLKSource
+                0x08000de0                RCC_HCLKConfig
+                0x08000e18                RCC_PCLK1Config
+                0x08000e50                RCC_PCLK2Config
+                0x08000e8c                RCC_ITConfig
+                0x08000ed8                RCC_USBCLKConfig
+                0x08000ef4                RCC_ADCCLKConfig
+                0x08000f2c                RCC_LSEConfig
+                0x08000f78                RCC_LSICmd
+                0x08000f98                RCC_RTCCLKConfig
+                0x08000fbc                RCC_RTCCLKCmd
+                0x08000fdc                RCC_GetClocksFreq
+                0x08001158                RCC_AHBPeriphClockCmd
+                0x08001198                RCC_APB2PeriphClockCmd
+                0x080011d8                RCC_APB1PeriphClockCmd
+                0x08001218                RCC_APB2PeriphResetCmd
+                0x08001258                RCC_APB1PeriphResetCmd
+                0x08001298                RCC_BackupResetCmd
+                0x080012b8                RCC_ClockSecuritySystemCmd
+                0x080012d8                RCC_MCOConfig
+                0x080012f8                RCC_GetFlagStatus
+                0x08001378                RCC_ClearFlag
+                0x08001394                RCC_GetITStatus
+                0x080013d0                RCC_ClearITPendingBit
+ .text          0x080013f0      0x2a0 /home/skt/code/CodeSourcery/Sourcery_CodeBench_Lite_for_ARM_EABI/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2/libgcc.a(_arm_muldivsf3.o)
+                0x080013f0                __mulsf3
+                0x080013f0                __aeabi_fmul
+                0x08001558                __divsf3
+                0x08001558                __aeabi_fdiv
+ *(.text.*)
+ .text.Reset_Handler
+                0x08001690       0x44 src/app.a(startup_stm32f10x_hd.o)
+                0x08001690                Reset_Handler
+ .text.Default_Handler
+                0x080016d4        0x2 src/app.a(startup_stm32f10x_hd.o)
+                0x080016d4                EXTI2_IRQHandler
+                0x080016d4                TIM8_TRG_COM_IRQHandler
+                0x080016d4                TIM8_CC_IRQHandler
+                0x080016d4                DebugMon_Handler
+                0x080016d4                TIM1_CC_IRQHandler
+                0x080016d4                HardFault_Handler
+                0x080016d4                TIM6_IRQHandler
+                0x080016d4                SysTick_Handler
+                0x080016d4                PVD_IRQHandler
+                0x080016d4                SDIO_IRQHandler
+                0x080016d4                PendSV_Handler
+                0x080016d4                NMI_Handler
+                0x080016d4                EXTI3_IRQHandler
+                0x080016d4                EXTI0_IRQHandler
+                0x080016d4                I2C2_EV_IRQHandler
+                0x080016d4                UsageFault_Handler
+                0x080016d4                ADC1_2_IRQHandler
+                0x080016d4                SPI1_IRQHandler
+                0x080016d4                TAMPER_IRQHandler
+                0x080016d4                TIM8_UP_IRQHandler
+                0x080016d4                DMA2_Channel2_IRQHandler
+                0x080016d4                DMA1_Channel4_IRQHandler
+                0x080016d4                USART3_IRQHandler
+                0x080016d4                RTC_IRQHandler
+                0x080016d4                DMA1_Channel7_IRQHandler
+                0x080016d4                CAN1_RX1_IRQHandler
+                0x080016d4                UART5_IRQHandler
+                0x080016d4                ADC3_IRQHandler
+                0x080016d4                TIM4_IRQHandler
+                0x080016d4                DMA2_Channel1_IRQHandler
+                0x080016d4                I2C1_EV_IRQHandler
+                0x080016d4                DMA1_Channel6_IRQHandler
+                0x080016d4                UART4_IRQHandler
+                0x080016d4                TIM3_IRQHandler
+                0x080016d4                RCC_IRQHandler
+                0x080016d4                TIM1_TRG_COM_IRQHandler
+                0x080016d4                DMA1_Channel1_IRQHandler
+                0x080016d4                Default_Handler
+                0x080016d4                EXTI15_10_IRQHandler
+                0x080016d4                TIM7_IRQHandler
+                0x080016d4                TIM5_IRQHandler
+                0x080016d4                EXTI9_5_IRQHandler
+                0x080016d4                SPI2_IRQHandler
+                0x080016d4                MemManage_Handler
+                0x080016d4                SVC_Handler
+                0x080016d4                DMA1_Channel5_IRQHandler
+                0x080016d4                EXTI4_IRQHandler
+                0x080016d4                USB_LP_CAN1_RX0_IRQHandler
+                0x080016d4                USB_HP_CAN1_TX_IRQHandler
+                0x080016d4                DMA1_Channel3_IRQHandler
+                0x080016d4                FSMC_IRQHandler
+                0x080016d4                TIM1_UP_IRQHandler
+                0x080016d4                WWDG_IRQHandler
+                0x080016d4                TIM2_IRQHandler
+                0x080016d4                TIM1_BRK_IRQHandler
+                0x080016d4                EXTI1_IRQHandler
+                0x080016d4                RTCAlarm_IRQHandler
+                0x080016d4                DMA2_Channel4_5_IRQHandler
+                0x080016d4                USART2_IRQHandler
+                0x080016d4                I2C2_ER_IRQHandler
+                0x080016d4                DMA1_Channel2_IRQHandler
+                0x080016d4                TIM8_BRK_IRQHandler
+                0x080016d4                CAN1_SCE_IRQHandler
+                0x080016d4                FLASH_IRQHandler
+                0x080016d4                BusFault_Handler
+                0x080016d4                USART1_IRQHandler
+                0x080016d4                SPI3_IRQHandler
+                0x080016d4                I2C1_ER_IRQHandler
+                0x080016d4                USBWakeUp_IRQHandler
+                0x080016d4                DMA2_Channel3_IRQHandler
+ *(.rodata)
+ *(.rodata*)
+ *(.glue_7)
+ .glue_7        0x00000000        0x0 linker stubs
+ *(.glue_7t)
+ .glue_7t       0x00000000        0x0 linker stubs
+                0x080016d8                . = ALIGN (0x4)
+ *fill*         0x080016d6        0x2 
+                0x080016d8                _etext = .
+                0x080016d8                _sidata = _etext
+
+.vfp11_veneer   0x080016d8        0x0
+ .vfp11_veneer  0x00000000        0x0 linker stubs
+
+.v4_bx          0x080016d8        0x0
+ .v4_bx         0x00000000        0x0 linker stubs
+
+.iplt           0x080016d8        0x0
+ .iplt          0x00000000        0x0 src/app.a(startup_stm32f10x_hd.o)
+
+.rel.dyn        0x080016d8        0x0
+ .rel.iplt      0x00000000        0x0 src/app.a(startup_stm32f10x_hd.o)
+
+.data           0x20000000       0x28 load address 0x080016d8
+                0x20000000                . = ALIGN (0x4)
+                0x20000000                _sdata = .
+ *(.data)
+ .data          0x20000000       0x14 src/app.a(system_stm32f10x.o)
+                0x20000000                SystemCoreClock
+                0x20000004                AHBPrescTable
+ .data          0x20000014       0x14 /home/skt/code/elecgame/template/libs/libstm32.a(stm32f10x_rcc.o)
+ *(.data.*)
+                0x20000028                . = ALIGN (0x4)
+                0x20000028                _edata = .
+
+.igot.plt       0x20000028        0x0 load address 0x08001700
+ .igot.plt      0x00000000        0x0 src/app.a(startup_stm32f10x_hd.o)
+
+.bss            0x20000028        0x0
+                0x20000028                . = ALIGN (0x4)
+                0x20000028                _sbss = .
+ *(.bss)
+ *(COMMON)
+                0x20000028                . = ALIGN (0x4)
+                0x20000028                _ebss = .
+                0x20000028                PROVIDE (end, _ebss)
+                0x20000028                PROVIDE (_end, _ebss)
+
+._usrstack      0x20000028      0x100 load address 0x08001700
+                0x20000028                . = ALIGN (0x4)
+                0x20000028                _susrstack = .
+                0x20000128                . = (. + _Minimum_Stack_Size)
+ *fill*         0x20000028      0x100 
+                0x20000128                . = ALIGN (0x4)
+                0x20000128                _eusrstack = .
+
+.b1text
+ *(.b1text)
+ *(.b1rodata)
+ *(.b1rodata*)
+
+.eb0text
+ *(.eb0text)
+ *(.eb0rodata)
+ *(.eb0rodata*)
+
+.eb1text
+ *(.eb1text)
+ *(.eb1rodata)
+ *(.eb1rodata*)
+
+.eb2text
+ *(.eb2text)
+ *(.eb2rodata)
+ *(.eb2rodata*)
+
+.eb3text
+ *(.eb3text)
+ *(.eb3rodata)
+ *(.eb3rodata*)
+                0x20000128                __exidx_start = .
+                0x20000128                __exidx_end = .
+
+/DISCARD/
+ libc.a(*)
+ libm.a(*)
+ libgcc.a(*)
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment        0x00000000       0x30
+ *(.comment)
+ .comment       0x00000000       0x30 src/app.a(main.o)
+                                 0x31 (size before relaxing)
+ .comment       0x00000000       0x31 src/app.a(system_stm32f10x.o)
+ .comment       0x00000000       0x31 /home/skt/code/elecgame/template/libs/libstm32.a(stm32f10x_gpio.o)
+ .comment       0x00000000       0x31 /home/skt/code/elecgame/template/libs/libstm32.a(stm32f10x_rcc.o)
+
+.ARM.attributes
+                0x00000000       0x2f
+ .ARM.attributes
+                0x00000000       0x21 src/app.a(startup_stm32f10x_hd.o)
+ .ARM.attributes
+                0x00000021       0x33 src/app.a(main.o)
+ .ARM.attributes
+                0x00000054       0x33 src/app.a(system_stm32f10x.o)
+ .ARM.attributes
+                0x00000087       0x33 /home/skt/code/elecgame/template/libs/libstm32.a(stm32f10x_gpio.o)
+ .ARM.attributes
+                0x000000ba       0x33 /home/skt/code/elecgame/template/libs/libstm32.a(stm32f10x_rcc.o)
+ .ARM.attributes
+                0x000000ed       0x19 /home/skt/code/CodeSourcery/Sourcery_CodeBench_Lite_for_ARM_EABI/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2/libgcc.a(_arm_muldivsf3.o)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges  0x00000000       0xa8
+ *(.debug_aranges)
+ .debug_aranges
+                0x00000000       0x28 src/app.a(startup_stm32f10x_hd.o)
+ .debug_aranges
+                0x00000028       0x20 src/app.a(main.o)
+ .debug_aranges
+                0x00000048       0x20 src/app.a(system_stm32f10x.o)
+ .debug_aranges
+                0x00000068       0x20 /home/skt/code/elecgame/template/libs/libstm32.a(stm32f10x_gpio.o)
+ .debug_aranges
+                0x00000088       0x20 /home/skt/code/elecgame/template/libs/libstm32.a(stm32f10x_rcc.o)
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info     0x00000000     0x17ad
+ *(.debug_info .gnu.linkonce.wi.*)
+ .debug_info    0x00000000       0x56 src/app.a(startup_stm32f10x_hd.o)
+ .debug_info    0x00000056      0x296 src/app.a(main.o)
+ .debug_info    0x000002ec      0x479 src/app.a(system_stm32f10x.o)
+ .debug_info    0x00000765      0x72e /home/skt/code/elecgame/template/libs/libstm32.a(stm32f10x_gpio.o)
+ .debug_info    0x00000e93      0x91a /home/skt/code/elecgame/template/libs/libstm32.a(stm32f10x_rcc.o)
+
+.debug_abbrev   0x00000000      0x63f
+ *(.debug_abbrev)
+ .debug_abbrev  0x00000000       0x12 src/app.a(startup_stm32f10x_hd.o)
+ .debug_abbrev  0x00000012      0x12e src/app.a(main.o)
+ .debug_abbrev  0x00000140      0x179 src/app.a(system_stm32f10x.o)
+ .debug_abbrev  0x000002b9      0x1ca /home/skt/code/elecgame/template/libs/libstm32.a(stm32f10x_gpio.o)
+ .debug_abbrev  0x00000483      0x1bc /home/skt/code/elecgame/template/libs/libstm32.a(stm32f10x_rcc.o)
+
+.debug_line     0x00000000      0x810
+ *(.debug_line)
+ .debug_line    0x00000000       0x73 src/app.a(startup_stm32f10x_hd.o)
+ .debug_line    0x00000073      0x173 src/app.a(main.o)
+ .debug_line    0x000001e6      0x186 src/app.a(system_stm32f10x.o)
+ .debug_line    0x0000036c      0x224 /home/skt/code/elecgame/template/libs/libstm32.a(stm32f10x_gpio.o)
+ .debug_line    0x00000590      0x280 /home/skt/code/elecgame/template/libs/libstm32.a(stm32f10x_rcc.o)
+
+.debug_frame    0x00000000      0x648
+ *(.debug_frame)
+ .debug_frame   0x00000000       0x30 src/app.a(main.o)
+ .debug_frame   0x00000030       0x80 src/app.a(system_stm32f10x.o)
+ .debug_frame   0x000000b0      0x210 /home/skt/code/elecgame/template/libs/libstm32.a(stm32f10x_gpio.o)
+ .debug_frame   0x000002c0      0x388 /home/skt/code/elecgame/template/libs/libstm32.a(stm32f10x_rcc.o)
+
+.debug_str      0x00000000      0x991
+ *(.debug_str)
+ .debug_str     0x00000000      0x20a src/app.a(main.o)
+                                0x243 (size before relaxing)
+ .debug_str     0x0000020a      0x144 src/app.a(system_stm32f10x.o)
+                                0x23a (size before relaxing)
+ .debug_str     0x0000034e      0x28c /home/skt/code/elecgame/template/libs/libstm32.a(stm32f10x_gpio.o)
+                                0x478 (size before relaxing)
+ .debug_str     0x000005da      0x3b7 /home/skt/code/elecgame/template/libs/libstm32.a(stm32f10x_rcc.o)
+                                0x579 (size before relaxing)
+
+.debug_loc      0x00000000      0xbc0
+ *(.debug_loc)
+ .debug_loc     0x00000000       0x38 src/app.a(main.o)
+ .debug_loc     0x00000038       0xc8 src/app.a(system_stm32f10x.o)
+ .debug_loc     0x00000100      0x3e4 /home/skt/code/elecgame/template/libs/libstm32.a(stm32f10x_gpio.o)
+ .debug_loc     0x000004e4      0x6dc /home/skt/code/elecgame/template/libs/libstm32.a(stm32f10x_rcc.o)
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_weaknames
+ *(.debug_weaknames)
+
+.debug_funcnames
+ *(.debug_funcnames)
+
+.debug_typenames
+ *(.debug_typenames)
+
+.debug_varnames
+ *(.debug_varnames)
+LOAD src/app.a
+LOAD /home/skt/code/CodeSourcery/Sourcery_CodeBench_Lite_for_ARM_EABI/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/thumb2/libm.a
+LOAD /home/skt/code/elecgame/template/libs/libstm32.a
+START GROUP
+LOAD /home/skt/code/CodeSourcery/Sourcery_CodeBench_Lite_for_ARM_EABI/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2/libgcc.a
+LOAD /home/skt/code/CodeSourcery/Sourcery_CodeBench_Lite_for_ARM_EABI/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/thumb2/libc.a
+END GROUP
+OUTPUT(main.elf elf32-littlearm)
+
+.debug_ranges   0x00000000       0x20
+ .debug_ranges  0x00000000       0x20 src/app.a(startup_stm32f10x_hd.o)

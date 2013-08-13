@@ -28,7 +28,10 @@ INCLUDE+=-I$(STMLIB)/STM32F10x_StdPeriph_Driver/inc
 # default settings for debug version: COMMONFLAGS=-O0 -g -mcpu=cortex-m3 -mthumb
 COMMONFLAGS=-O0 -g -mcpu=cortex-m3 -mthumb
 CFLAGS+=$(COMMONFLAGS) -Wall -Werror $(INCLUDE)
+ASFLAGS+=--gdwarf2 -v -mcpu=cortex-m3 -meabi=5
 
+# HD, MD, LD
+CHIP=HD
 #Adust the following line to the type of MCU used
-CFLAGS+=-D STM32F10X_MD
+CFLAGS+=-D STM32F10X_$(CHIP)
 CFLAGS+=-D VECT_TAB_FLASH
