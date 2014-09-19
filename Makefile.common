@@ -2,7 +2,6 @@ TOP=$(shell readlink -f "$(dir $(lastword $(MAKEFILE_LIST)))")
 PROGRAM=main
 LIBDIR=$(TOP)/libs
 #Adust the following line to the library in use
-STMLIB=$(LIBDIR)/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries
 
 TC=arm-none-eabi
 CC=$(TC)-gcc
@@ -12,11 +11,10 @@ OBJCOPY=$(TC)-objcopy
 AR=$(TC)-ar
 GDB=$(TC)-gdb
 
-INCLUDE=-I$(TOP)/inc
-INCLUDE+=-I$(TOP)/inc/inc
-INCLUDE+=-I$(STMLIB)/CMSIS/CM3/CoreSupport
-INCLUDE+=-I$(STMLIB)/CMSIS/CM3/DeviceSupport/ST/STM32F10x
-INCLUDE+=-I$(STMLIB)/STM32F10x_StdPeriph_Driver/inc
+INCLUDE+=-I$(TOP)/inc
+INCLUDE+=-I$(TOP)/libs/STM32F10x_StdPeriph_Driver/inc
+INCLUDE+=-I$(TOP)/libs/STM32_USB-FS-Device_Driver/inc
+INCLUDE+=-I$(TOP)/libs/CoreSupport
 
 #Compiler optimize settings:
 # -O0 no optimize, reduce compilation time and make debugging produce the expected results (default).
@@ -27,7 +25,7 @@ INCLUDE+=-I$(STMLIB)/STM32F10x_StdPeriph_Driver/inc
 # default settings for release version: COMMONFLAGS=-O3 -g -mcpu=cortex-m3 -mthumb
 # default settings for debug version: COMMONFLAGS=-O0 -g -mcpu=cortex-m3 -mthumb
 COMMONFLAGS=-O0 -g -mcpu=cortex-m3 -mthumb
-CFLAGS+=$(COMMONFLAGS) -Wall -Werror $(INCLUDE)
+CFLAGS+=$(COMMONFLAGS) -Wall $(INCLUDE)
 ASFLAGS+=--gdwarf2 -v -mcpu=cortex-m3 -meabi=5
 
 # HD, MD, LD
@@ -35,3 +33,5 @@ CHIP=HD
 #Adust the following line to the type of MCU used
 CFLAGS+=-D STM32F10X_$(CHIP)
 CFLAGS+=-D VECT_TAB_FLASH
+CFLAGS+=-D SYSCLK_FREQ_72MHz
+#CFLAGS+=-D SYSCLK_FREQ_HSI

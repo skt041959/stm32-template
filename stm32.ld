@@ -13,9 +13,9 @@ ENTRY(Reset_Handler)
 /* Memory Spaces Definitions */
 MEMORY
 {
-  RAM (xrw) : ORIGIN = 0x20000000, LENGTH = 48K  /* also change _estack below */
-  FLASH (rx) : ORIGIN = 0x8000000, LENGTH = 512K
-  FLASHB1 (rx) : ORIGIN = 0x00000000, LENGTH = 0
+  RAM (xrw)     : ORIGIN = 0x20000000, LENGTH = 20K  /* also change _estack below */
+  FLASH (rx)    : ORIGIN = 0x8000000, LENGTH = 64K
+  FLASHB1 (rx)  : ORIGIN = 0x00000000, LENGTH = 0
   EXTMEMB0 (rx) : ORIGIN = 0x00000000, LENGTH = 0
   EXTMEMB1 (rx) : ORIGIN = 0x00000000, LENGTH = 0
   EXTMEMB2 (rx) : ORIGIN = 0x00000000, LENGTH = 0
@@ -23,7 +23,7 @@ MEMORY
 }
 
 /* highest address of the user mode stack */
-_estack = 0x2000C000;
+_estack = 0x20005000;
 
 /* include the section management sub-script */
 /* (either "STM32_SEC_FLASH.ld" or "STM32_SEC_RAM.ld") */

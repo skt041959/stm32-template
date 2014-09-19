@@ -11,8 +11,15 @@ ifeq ($(CHIP),LD)
 endif
 OBJS+=./main.o
 OBJS+=./newlib_stubs.o
-OBJS+=./stm32f10x_delay.o
 OBJS+=./system_stm32f10x.o
+OBJS+=./hw_config.o
+OBJS+=./stm32_it.o
+
+OBJS+=./usb_desc.o \
+	  ./usb_endp.o \
+	  ./usb_istr.o \
+	  ./usb_prop.o \
+	  ./usb_pwr.o
 
 all: src
 
@@ -27,5 +34,6 @@ app.a: $(OBJS)
 .PHONY: src clean
 
 clean:
-	rm -f app.a *.o
+	-rm -f app.a *.o
+	-rm -f startup/*.o
 

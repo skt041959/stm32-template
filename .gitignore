@@ -1,0 +1,17 @@
+*.o
+*.a
+*.swp
+*.log
+*.pyc
+
+main.elf
+main.bin
+main.hex
+main.map
+main.info_elf
+tags
+cscope.out
+cscope.in.out
+cscope.po.out
+
+.directory

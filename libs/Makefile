@@ -1,29 +1,36 @@
 include ../Makefile.common
-LIBS+=libstm32.a
+LIBS+=libstm32.a libstm32_usb.a
 CFLAGS+=-c
 all: libs
 libs: $(LIBS)
 
 libstm32.a:
-	@echo -n "Building $@ ..."
 	cd ./CoreSupport && \
 		$(CC) $(CFLAGS) \
 		core_cm3.c
-	cd ./src && \
+	cd ./STM32F10x_StdPeriph_Driver/src && \
 		$(CC) $(CFLAGS) \
 		-D"assert_param(expr)=((void)0)" \
-		-I../CoreSupport\
-		-I../inc \
+		-I../../CoreSupport\
 		*.c
 	$(AR) cr $(LIBDIR)/$@ \
 		./CoreSupport/core_cm3.o \
-		./src/*.o
-	@echo "done."
+		./STM32F10x_StdPeriph_Driver/src/*.o
+
+libstm32_usb.a:
+	cd ./STM32_USB-FS-Device_Driver/src && \
+		$(CC) $(CFLAGS) \
+		-D"assert_param(expr)=((void)0)" \
+		-I../../CoreSupport\
+		*.c
+	$(AR) cr $(LIBDIR)/$@ \
+		./STM32_USB-FS-Device_Driver/src/*.o
 
 .PHONY: libs clean
 
 clean:
-	-rm -f $(STMLIB)/STM32F10x_StdPeriph_Driver/src/*.o
-	-rm -f $(STMLIB)/CMSIS/CM3/CoreSupport/core_cm3.o
+	-rm -f STM32F10x_StdPeriph_Driver/src/*.o
+	-rm -f STM32_USB-FS-Device_Driver/src/*.o
+	-rm -f CoreSupport/core_cm3.o
 	-rm -f $(LIBS)
 
